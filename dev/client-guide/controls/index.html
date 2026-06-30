@@ -407,9 +407,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#key-config" class="md-nav__link">
     <span class="md-ellipsis">
-      補足
+      キーの割り当て変更(KEY CONFIG)
     </span>
   </a>
   
@@ -865,42 +865,53 @@
 </tbody>
 </table>
 <p>演出ポップアップの送りも、決定(A)・キャンセル(B)で進められます。</p>
+<p>フッタのキー表記は、直近に使った入力デバイスに合わせて自動で切り替わります(例: 決定は
+キーボードなら <code>Z</code>、コントローラーを使った直後なら <code>A</code> と表示)。</p>
 <h2 id="_3">対戦中の操作</h2>
+<p>すべての操作がキーボード・コントローラーの両方で行えます。</p>
 <table>
 <thead>
 <tr>
-<th>キー</th>
 <th>はたらき</th>
+<th>キーボード</th>
+<th>コントローラー</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>矢印キー</td>
 <td>カーソル移動</td>
+<td>矢印キー</td>
+<td>方向パッド(D-Pad)</td>
 </tr>
 <tr>
-<td>Z / Enter</td>
 <td>決定(カードの上では、そのカードで出来る行動メニューを開く)</td>
+<td>Z / Enter</td>
+<td>A</td>
 </tr>
 <tr>
-<td>X</td>
 <td>キャンセル(メニューを閉じる)</td>
+<td>X</td>
+<td>B</td>
 </tr>
 <tr>
-<td>TAB</td>
 <td>左パネルのページ送り(札絵 → 効果1 → 効果2 …)。行動メニュー中はプレビューを札絵 ⇔ 効果で切替</td>
+<td>TAB</td>
+<td>R(右肩ボタン)</td>
 </tr>
 <tr>
-<td>Ctrl+TAB</td>
 <td>左パネルを 効果 ⇔ ログ履歴 で切替</td>
+<td>Ctrl+TAB</td>
+<td>Y</td>
 </tr>
 <tr>
+<td>階段ガイド(3/4/5段の効果。TAB / R でページ送り)</td>
 <td>?(/)</td>
-<td>階段ガイド(3/4/5段の効果。TAB でページ送り)</td>
+<td>L(左肩ボタン)</td>
 </tr>
 <tr>
-<td>Esc</td>
 <td>ポーズメニュー(RESTART / NEW MATCH / HOME)</td>
+<td>Esc</td>
+<td>BACK(Select)</td>
 </tr>
 </tbody>
 </table>
@@ -908,11 +919,16 @@
 <p>コントローラーだけでも文字入力ができます。ルームコードは桁ごとに上下で文字を選び、
 ホストアドレス/ポートは画面上の文字キーボード(オンスクリーンキーボード)から方向キー + 決定で入力します。
 キーボードで直接打つこともできます。</p>
-<h2 id="_5">補足</h2>
 <ul>
-<li>上の表の TAB / Ctrl+TAB / ?(/) など一部の補助操作は現在キーボード専用です。</li>
-<li>キーの割り当て変更(リマップ)と、画面のキー表記をデバイスに合わせて出す改善は今後対応予定です。</li>
+<li><strong>コピー</strong>: 待機画面で <code>C</code> キー、または <strong>A</strong> ボタンでコード/アドレスをクリップボードにコピー。</li>
+<li><strong>ペースト</strong>: コード入力中に <code>Ctrl+V</code>、または <strong>X</strong> ボタンで貼り付け。</li>
 </ul>
+<h2 id="key-config">キーの割り当て変更(KEY CONFIG)</h2>
+<p><code>SETTINGS</code> → <code>KEY CONFIG</code> で、各操作に割り当てるキー/ボタンを変更できます(リマップ)。
+変更したいアクションを選んで決定するとキャプチャ待ちになり、割り当てたいキーまたはボタンを1つ押すと設定されます。
+キャプチャ中は BACK(Select)/ Esc で中断でき、一定時間で自動的に解除されます。
+<code>RESET</code> で既定に戻せます。中核操作(移動・決定・キャンセル・戻る)は到達不能にならないよう保護されます。
+設定は保存され、次回起動でも記憶されます。</p>
 
 
 

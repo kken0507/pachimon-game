@@ -407,9 +407,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#key-remapping-key-config" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
+      Key remapping (KEY CONFIG)
     </span>
   </a>
   
@@ -865,42 +865,53 @@ The footer at the bottom of each screen always shows the keys available on that 
 </tbody>
 </table>
 <p>Effect pop-ups can also be advanced with Confirm (A) / Cancel (B).</p>
+<p>The on-screen key labels in the footer adapt to the input device you used most
+recently (e.g. Confirm shows <code>Z</code> on a keyboard, or <code>A</code> right after you use a controller).</p>
 <h2 id="in-match-controls">In-match controls</h2>
+<p>Every action can be performed with both keyboard and controller.</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
 <th>Action</th>
+<th>Keyboard</th>
+<th>Controller</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Arrows</td>
 <td>Move the cursor</td>
+<td>Arrows</td>
+<td>D-Pad</td>
 </tr>
 <tr>
-<td>Z / Enter</td>
 <td>Confirm (on a card, opens its available-actions menu)</td>
+<td>Z / Enter</td>
+<td>A</td>
 </tr>
 <tr>
-<td>X</td>
 <td>Cancel (close the menu)</td>
+<td>X</td>
+<td>B</td>
 </tr>
 <tr>
+<td>Page the left panel (card art → effect 1 → effect 2 …); in an actions menu, toggles the preview between art and effect</td>
 <td>TAB</td>
-<td>Page the left panel (card art → effect 1 → effect 2 …). In an actions menu, toggles the preview between art and effect</td>
+<td>R (right shoulder)</td>
 </tr>
 <tr>
-<td>Ctrl+TAB</td>
 <td>Switch the left panel between Effect and Log history</td>
+<td>Ctrl+TAB</td>
+<td>Y</td>
 </tr>
 <tr>
+<td>Stair guide (3/4/5-stair effects; TAB / R to page)</td>
 <td>?(/)</td>
-<td>Stair guide (3/4/5-stair effects; TAB to page)</td>
+<td>L (left shoulder)</td>
 </tr>
 <tr>
-<td>Esc</td>
 <td>Pause menu (RESTART / NEW MATCH / HOME)</td>
+<td>Esc</td>
+<td>BACK (Select)</td>
 </tr>
 </tbody>
 </table>
@@ -908,11 +919,17 @@ The footer at the bottom of each screen always shows the keys available on that 
 <p>Text can be entered with the controller alone. For a room code, pick each character
 with up/down per digit; for a host address/port, use the on-screen keyboard with the
 D-Pad + Confirm. You can also type directly on the keyboard.</p>
-<h2 id="notes">Notes</h2>
 <ul>
-<li>Some secondary actions in the table above (TAB / Ctrl+TAB / ?(/)) are currently keyboard-only.</li>
-<li>Key remapping and device-aware on-screen key labels are planned for a future update.</li>
+<li><strong>Copy</strong>: on the waiting screen, press <code>C</code> or the <strong>A</strong> button to copy the code/address to the clipboard.</li>
+<li><strong>Paste</strong>: while entering a code, press <code>Ctrl+V</code> or the <strong>X</strong> button to paste.</li>
 </ul>
+<h2 id="key-remapping-key-config">Key remapping (KEY CONFIG)</h2>
+<p><code>SETTINGS</code> → <code>KEY CONFIG</code> lets you change the key/button bound to each action (remapping).
+Select an action and confirm to enter capture mode, then press the single key or button you
+want to assign. During capture you can cancel with BACK (Select) / Esc, and it times out
+automatically. Use <code>RESET</code> to restore defaults. Core actions (move / confirm / cancel / back)
+are protected so they can never become unreachable. Your bindings are saved and remembered on
+the next launch.</p>
 
 
 
