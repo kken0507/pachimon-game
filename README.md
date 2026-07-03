@@ -48,6 +48,15 @@ For full controls, rules and settings, see the bundled `README.txt` or the in-ga
 言語（ja / en）は **SETTINGS** で切替でき、**SAVE** で次回起動以降も保存されます。
 The language (ja / en) can be changed in **SETTINGS** and kept across launches with **SAVE**.
 
+## ルール / Rules
+
+全カードの効果を含む詳しいルールブック(日本語 / English)はオンラインで読めます:
+The full rulebook (including every card effect), in Japanese and English:
+
+**https://kken0507.github.io/pachimon-game/**
+
+（ゲーム内の **HOW TO PLAY** でも同じ内容を確認できます / the same content is available in-game under **HOW TO PLAY**）
+
 ## クレジット / Credits
 
 - カード画像 / Card art: **Pixelart Cards** by kerenel (CC0) — https://kerenel.itch.io/pixelart-cards
