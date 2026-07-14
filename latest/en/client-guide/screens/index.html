@@ -865,7 +865,14 @@ Quit via the <code>QUIT</code> item (there is no dedicated quit key).</p>
 <ul>
 <li>The board is an accordion: <strong>only the cursor's row is shown full-size</strong> (other rows are minimized).</li>
 <li>The opponent's magic/trap zone is shown too.</li>
-<li>The left panel shows the detail (attack power, effect) of the card under the cursor.</li>
+<li>The left panel shows the detail (attack power, status, materials, effect) of the card under the cursor.</li>
+<li>Attack power is shown like <code>A9</code>. <strong>While boosted by an effect the number turns green</strong>
+  (this is the value actually used in combat). Battle popups also show effective values
+  like <code>SK(5) vs H5(3)</code>.</li>
+<li>Monsters with materials stacked underneath show a <strong>count badge like <code>x2</code></strong>
+  (the left panel shows <code>Mat x2</code>).</li>
+<li>The staircase activation menu shows <strong>which cards from your hand will be spent</strong>
+  (e.g. <code>Stair 3 (S3 S4 S5)</code>).</li>
 </ul>
 <h3 id="frame-and-background-colors">Frame and background colors</h3>
 <table>
@@ -899,6 +906,10 @@ Quit via the <code>QUIT</code> item (there is no dedicated quit key).</p>
 <tr>
 <td>Gray (background)</td>
 <td>Uncharged (already acted / cannot act)</td>
+</tr>
+<tr>
+<td>Green (attack number)</td>
+<td>Boosted by an effect (effective value for this battle)</td>
 </tr>
 </tbody>
 </table>

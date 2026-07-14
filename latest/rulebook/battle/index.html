@@ -674,6 +674,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 ダメージ計算前(モンスター同士の戦闘のみ)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       3. 戦闘処理
@@ -881,10 +890,14 @@
 <li><strong>モンスターでブロック</strong>: 相手は自分の Charged モンスター1体を Uncharged にしてブロックする(Uncharged はブロック不可)。</li>
 <li><strong>階段で防御</strong>: 手札に<a href="../staircase/">階段</a>が成立していれば、モンスター無しでも攻撃を無効化できる。</li>
 </ul>
+<h3 id="25">2.5 ダメージ計算前(モンスター同士の戦闘のみ)</h3>
+<p>ブロックが確定したら、ダメージ計算の前に<strong>攻撃側 → ブロック側の順</strong>で
+「この戦闘の間だけ攻撃力を上げる」効果(例: K の<strong>王の威厳</strong> +3)を発動する機会があります
+(1回の戦闘で各側1回まで。発動された強化はこの戦闘の間だけ有効です)。</p>
 <h3 id="3">3. 戦闘処理</h3>
 <ul>
 <li><strong>シールドへの攻撃(ブロックされず)</strong>: シールド1枚を破壊(<a href="../shields/">シールド</a>参照)。</li>
-<li><strong>モンスター同士</strong>: 攻撃力を比較する。</li>
+<li><strong>モンスター同士</strong>: 攻撃力を比較する(2.5 の強化込みの実効値)。</li>
 </ul>
 <table>
 <thead>
