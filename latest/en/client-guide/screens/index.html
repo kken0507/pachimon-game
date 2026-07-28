@@ -440,6 +440,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#how-effect-resolution-looks-v023" class="md-nav__link">
+    <span class="md-ellipsis">
+      How effect resolution looks (v0.2.3+)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#frame-and-background-colors" class="md-nav__link">
     <span class="md-ellipsis">
       Frame and background colors
@@ -893,6 +902,20 @@ Quit via the <code>QUIT</code> item (there is no dedicated quit key).</p>
   (the left panel shows <code>Mat x2</code>).</li>
 <li>The staircase activation menu shows <strong>which cards from your hand will be spent</strong>
   (e.g. <code>Stair 3 (S3 S4 S5)</code>).</li>
+<li>While <strong><code>REV</code></strong> is shown next to the turn indicator, <strong>Revolution is active</strong>
+  (the attack/defence order is reversed).</li>
+</ul>
+<h3 id="how-effect-resolution-looks-v023">How effect resolution looks (v0.2.3+)</h3>
+<ul>
+<li>When an effect resolves, <strong>its source card (and target) flashes briefly</strong>. Your input is never blocked.</li>
+<li>While a <strong>chain</strong> is building and you are asked whether to respond, the left panel lists
+  <strong>every stacked effect in order</strong> (<code>CHAIN x2</code> / <code>L1 …</code> / <code>L2 …</code>).</li>
+<li>A message interrupts <strong>only when your own effect is stopped</strong>:<ul>
+<li><code>EFFECT NEGATED</code> — the opponent negated it.</li>
+<li><code>EFFECT FIZZLED</code> … <code>no target</code> — it fizzled because its target was gone.</li>
+<li>Opponent effects never interrupt you (check the log below the board).</li>
+</ul>
+</li>
 </ul>
 <h3 id="frame-and-background-colors">Frame and background colors</h3>
 <table>

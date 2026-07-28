@@ -440,6 +440,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v023" class="md-nav__link">
+    <span class="md-ellipsis">
+      効果が解決するときの見え方(v0.2.3〜)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       枠と背景の色
@@ -890,6 +899,17 @@
   (実際に戦闘で使う値)。戦闘結果のポップアップにも <code>SK(5) vs H5(3)</code> のように実効値が出ます。</li>
 <li>下に素材を重ねているモンスターには <strong><code>x2</code> のような素材枚数</strong>が付きます(左パネルには <code>Mat x2</code>)。</li>
 <li>階段を発動するメニューには、<strong>コストとして使う手札</strong>(例: <code>Stair 3 (S3 S4 S5)</code>)が表示されます。</li>
+<li>ターン表示の横に <strong><code>REV</code></strong> が出ている間は<strong>革命中</strong>(攻守の強弱が逆転しています)。</li>
+</ul>
+<h3 id="v023">効果が解決するときの見え方(v0.2.3〜)</h3>
+<ul>
+<li>効果が解決すると、<strong>その効果の発動元カード(と対象)が一瞬光ります</strong>。操作は止まりません。</li>
+<li><strong>チェーン</strong>(効果が積み重なっている状態)で応答するかを選ぶ場面では、左パネルに
+  <strong>積まれている効果が上から順に並びます</strong>(<code>CHAIN x2</code> / <code>L1 …</code> / <code>L2 …</code>)。</li>
+<li><strong>自分の効果が止められた時だけ</strong>、中央にメッセージが割り込みます。</li>
+<li><code>EFFECT NEGATED</code> — 相手に無効化された。</li>
+<li><code>EFFECT FIZZLED</code> … <code>対象なし</code> — 対象が居なくなって不発になった。</li>
+<li>相手の効果が止まった場合は割り込みません(下のログで確認できます)。</li>
 </ul>
 <h3 id="_4">枠と背景の色</h3>
 <table>
